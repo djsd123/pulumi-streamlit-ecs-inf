@@ -1,0 +1,14 @@
+encryptionsalt: v1:sg5QmPwLl+s=:v1:2NOVSPQ94xD1AcPg:QNaOus+GO5nnucXXsLxegrBvwbzDDA==
+config:
+  aws:region: eu-west-1
+  streamlit-inf:appName: vid-to-mp3
+  streamlit-inf:cidrBlock: 10.0.0.0/16
+  streamlit-inf:desiredInstances: "1"
+  streamlit-inf:domainName: sub.mcallison.co.uk
+  streamlit-inf:ecrImageMaxDays: "90"
+  streamlit-inf:ecrImageMaxImages: "5"
+  streamlit-inf:logRetentionDays: "1"
+  streamlit-inf:name: streamlit
+  streamlit-inf:region: eu-west-1
+  streamlit-inf:s3ForceDestroy: "true"
+  streamlit-inf:streamlitPort: "8501"

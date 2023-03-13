@@ -1,0 +1,3 @@
+name: streamlit-inf
+runtime: nodejs
+description: Infrastructure for Streamlit Apps
