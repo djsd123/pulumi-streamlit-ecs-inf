@@ -22,15 +22,6 @@ new aws.s3.BucketOwnershipControls('logging-bucket-ownership-control', {
     },
 })
 
-new aws.s3.BucketPublicAccessBlock('logging-bucket-public-access-block', {
-    bucket: loggingBucket.id,
-    blockPublicAcls: true,
-    blockPublicPolicy: true,
-    ignorePublicAcls: true,
-    restrictPublicBuckets: true,
-})
-
-
 const loadBalancerServiceAccountArn = aws.elb.getServiceAccount({}).then((serviceAccount) => serviceAccount.arn)
 const accountId = aws.getCallerIdentity({}).then((current) => current.accountId)
 
